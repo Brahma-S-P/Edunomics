@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <!-- SHADOW -->
+
+            <item
+                android:bottom="5px"
+                >
+                <shape>
+                    <gradient
+                        android:startColor="#FFFFFF"
+                        android:endColor="#FFFFFF"
+                         />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+
+            <!-- BUTTON -->
+            <item android:bottom="5px">
+                <shape>
+                    <gradient
+                        android:startColor="#FFFFFF"
+                        android:endColor="#D1D1D1"
+                        android:angle="270" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

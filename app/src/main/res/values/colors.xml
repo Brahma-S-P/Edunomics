@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#535353</color>
+    <color name="light_grey">#E3E3E3</color>
+    <color name="career">#0080FE</color>
+
+    <color name="skill">#63C5DA</color>
+
+
+</resources>

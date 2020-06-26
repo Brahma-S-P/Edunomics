@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light_grey"
+        android:elevation="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:padding="5dp"
+            android:clickable="true"
+            android:elevation="2dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the world of Edunomics"
+        android:textAlignment="center"
+        android:layout_below="@id/ll_icon"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"/>
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView_welcome"
+        android:weightSum="100"
+        android:layout_marginTop="8dp">
+        <AutoCompleteTextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:hint="How to get a Career?"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:completionThreshold="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/rounded"/>
+        <ImageButton
+            android:id="@+id/img_button_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"
+            android:scaleType="centerInside"
+            android:layout_weight="90"
+            android:layout_marginRight="3dp"
+            android:background="@android:color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_search"
+        android:weightSum="100"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/button_career"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career"
+            android:background="@drawable/rounded_button"            android:bottomRightRadius="10dp"
+            android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/white"
+            android:elevation="20dp"
+            />
+        <Button
+            android:id="@+id/button_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill"
+            android:background="@drawable/rounded_button_skill"
+            android:layout_marginLeft="8dp"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_buttons"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/study"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="500">
+                <TextView
+                    android:id="@+id/tv_impact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="100"
+                    android:text="Impact"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_button_text"/>
+                <TextView
+                    android:id="@+id/tv_oppor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:text="Opportunities"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:background="@drawable/rounded_button_text"/>
+                <TextView
+                    android:id="@+id/tv_innit"
+                    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:text="Initiatives"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:clickable="true"
+                    android:background="@drawable/rounded_button_text"/>
+                <TextView
+                android:id="@+id/tv_blogs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="110"
+                android:text="Blogs"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:clickable="true"
+                    android:background="@drawable/rounded_button_text"/>
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:text="Login ->"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:clickable="true"
+                    android:background="@drawable/rounded_button_text"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textview_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Edunomics"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:id="@+id/ll_imp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/ibtro"
+                android:layout_weight="50"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+                <LinearLayout
+                    android:id="@+id/ll_know_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:textColor="#676767"
+                        android:textAlignment="gravity"
+                        android:lineSpacingExtra="2dp"
+                        android:text="We are an ed-tech platform with a vision to impact education and economy by offering training through industry experts. We are out on our way to catalyze change and bridge the gap between educational and industrial worlds."/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="Know more"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rounded_button_knw"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/heading_impact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impact of Edunomics on Economy"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/book"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quality Education"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="Knowledge through the industry experts will be shared to facilitate a hasslefree transition to the professional world."/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/better_talent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Better Talent"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="World-class talent will be produced in various fields that will be competitive enough to play the odds in its favor."/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/productivity"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productivity at jobs"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="Talented workforce enabling innovation and productivity will be successful in driving the desired outputs."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/innovation_drive"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Innovation Driven"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="The industry will undergo innovation with more demand which will ultimately, create more space for the talent produced."/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/capacity_enhancement"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Need Capacity Enhancement"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="A great opportunity for existing and new industries to come up with improved facilities."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/morejobs"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more_jobs"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="@string/increased_consumption_productivity_and_innovation_will_lead_to_an_increase_in_employment_and_hence_create_a_cycle"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_impact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/more_profits"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More Profits"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="Enhanced productivity and ideas will bring in more revenue and ensure increased profits."/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/heading_oppor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infinite Opportunities"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:id="@+id/ll_indutry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/teachers"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Industry Expert As Professor"
+                        android:textAlignment="center"
+                        android:paddingBottom="12dp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="Experience Real-world Business/Technical Learning given by renowned industry experts. Get one-on-one mentoring sessions and a chance to work on live projects."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_why"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/dreams"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Why  &amp; What is best for me Next"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        android:text="We all do have dreams, and to achieve them we needs to be very clear about what need to be done next. And sometime we even need handholding for How?"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/heading_initiatives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Initiatives"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/imge"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/edu"
+                android:layout_weight="50"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+            <LinearLayout
+                android:id="@+id/ll_edu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:textColor="#676767"
+                    android:textAlignment="gravity"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Scouting 50 of the aspiring minds, willing to achieve excellence.An initiative to provide world-class training to 50 talented students with serious aspirations to achieve their goal of success to work in challenging environment and grow fast."/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="80"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="5dp"
+                   android:weightSum="100">
+                   <Button
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Know more"
+                       android:textSize="12sp"
+                       android:layout_weight="50"
+                       android:textColor="@android:color/white"
+                       android:background="@drawable/rounded_button_knw"
+                       android:layout_gravity="center"/>
+                   <Button
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Apply Now"
+                       android:textSize="12sp"
+                       android:layout_weight="50"
+                       android:textColor="@android:color/white"
+                       android:background="@drawable/rounded_button_apply"
+                       android:layout_gravity="center"/>
+               </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_wenestor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:textColor="#676767"
+                        android:textAlignment="gravity"
+                        android:lineSpacingExtra="2dp"
+                        android:gravity="center"
+                        android:text="Get help on improving your business scenario right from purchase to Marketing."/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:text="wenestor"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rounded_button_knw"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/img_wenestor"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/wenester"
+                    android:layout_weight="50"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:id="@+id/img_youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/youtube"
+                    android:layout_weight="50"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="gravity"
+                        android:lineSpacingExtra="2dp"
+                        android:textSize="16sp"
+                        android:text="Lets Aspire You to Create A New World"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:textColor="#676767"
+                        android:textAlignment="gravity"
+                        android:lineSpacingExtra="2dp"
+                        android:text="With Edunomics connect, you will be going to connected with people who aspire you to be the best of yourself."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More from Edunomics!"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/more"
+                android:scaleType="centerInside"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edunomics Tech Solutions."
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bootstrapping to achieve vision and doing Digital Business."
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textColor="#676767"
+                android:textSize="14sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/light_grey"
+                android:weightSum="300"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:layout_weight="100"
+                    android:elevation="2dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="100"
+                    android:weightSum="400"
+                    android:orientation="horizontal">
+                    <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/facebook"
+                    android:scaleType="centerInside"
+                    android:layout_weight="100"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/instagram"
+                        android:scaleType="centerInside"
+                        android:layout_weight="100"/>
+                    <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/twitter_logo"
+                    android:scaleType="centerInside"
+                    android:layout_weight="100"/>
+                    <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/linkedin"
+                    android:scaleType="centerInside"
+                    android:layout_weight="100"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:text="TERMS OF USE | COOKIE POLICY | TECH | PRIVACY POLICY | FAQ's"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copyright 2020 © | All rights reserved."
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:background="#1A8A00"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

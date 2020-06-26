@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Edunomics</string>
+    <string name="knowledge_through_the_industry_experts_will_be_shared_to_facilitate_a_hasslefree_transition_to_the_professional_world">Knowledge through the industry experts will be shared to facilitate a hasslefree transition to the professional world.</string>
+    <string name="quality_education">Quality Education</string>
+    <string name="increased_consumption_productivity_and_innovation_will_lead_to_an_increase_in_employment_and_hence_create_a_cycle">Increased consumption, productivity, and innovation will lead to an increase in employment and hence create a cycle.</string>
+    <string name="more_jobs">More Jobs</string>
+    <string-array name="hints">
+        <item>java</item>
+        <item>react</item>
+        <item>node</item>
+        <item>c/c++</item>
+        <item>python</item>
+
+    </string-array>
+
+</resources>

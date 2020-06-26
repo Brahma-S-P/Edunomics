@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <solid android:color="#CFCFCF"/>
+                    <corners android:radius="7dp"/>
+                </shape>
+            </item>
+            android:right="5px" to make it round-->
+            <item
+                android:bottom="5px"
+                >
+                <shape>
+                    <gradient
+                        android:startColor="@color/career"
+                        android:endColor="@color/career"
+                        android:angle="270" />
+                    <corners
+                        android:radius="7dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <solid android:color="#9A9A9A"/>
+                    <corners android:radius="7dp"/>
+
+                </shape>
+            </item>
+            <item android:bottom="5px">
+                <shape>
+                    <gradient
+                        android:startColor="#66B2FD"
+                        android:endColor="#0075E8"
+                        android:angle="270" />
+                    <corners
+                        android:radius="7dp"/>
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
